@@ -1,0 +1,56 @@
+{
+	// エディタの一般設定
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"editor.rulers": [100],
+	"editor.wordWrap": "on",
+
+	// ファイル設定
+	"files.eol": "\n",
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+
+	// JavaScript と TypeScript の設定
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// Prettier の設定
+	"prettier.requireConfig": true,
+	"prettier.configPath": ".prettierrc.js",
+
+	// Git の設定
+	"git.enableSmartCommit": true,
+	"git.confirmSync": false,
+
+	// その他の推奨設定
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"workbench.editor.enablePreview": false,
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"typescript": "typescriptreact"
+	},
+	"emmet.triggerExpansionOnTab": true,
+
+	// Next.js 特有の設定
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	// TypeScript パスマッピングのサポート
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"javascript.preferences.importModuleSpecifier": "non-relative"
+}

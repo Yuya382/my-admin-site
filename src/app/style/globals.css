@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムベーススタイル */
+@layer base {
+  html {
+    @apply text-gray-900 bg-white;
+  }
+  h1 {
+    @apply text-2xl font-bold mb-2;
+  }
+  h2 {
+    @apply text-xl font-semibold mb-2;
+  }
+  a {
+    @apply text-blue-600 hover:text-blue-800;
+  }
+}
+
+/* カスタムコンポーネント */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-semibold text-sm bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+}
+
+/* カスタムユーティリティ */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* メディアクエリの例 */
+@media (max-width: 768px) {
+  .responsive-text {
+    @apply text-sm;
+  }
+}
+
+/* ダークモードの例 */
+@media (prefers-color-scheme: dark) {
+  html {
+    @apply text-gray-100 bg-gray-900;
+  }
+}
