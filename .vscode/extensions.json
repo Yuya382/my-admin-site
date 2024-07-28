@@ -1,0 +1,55 @@
+{
+	"recommendations": [
+		// ESLint - コード品質とスタイルのチェック
+		"dbaeumer.vscode-eslint",
+
+		// Prettier - コードフォーマッター
+		"esbenp.prettier-vscode",
+
+		// JavaScript and TypeScript Nightly - 最新の言語機能サポート
+		"ms-vscode.vscode-typescript-next",
+
+		// Tailwind CSS IntelliSense - Tailwind CSSのクラス補完
+		"bradlc.vscode-tailwindcss",
+
+		// Auto Rename Tag - HTMLタグの自動リネーム
+		"formulahendry.auto-rename-tag",
+
+		// Path Intellisense - ファイルパスの自動補完
+		"christian-kohler.path-intellisense",
+
+		// npm Intellisense - npmモジュールの自動インポート
+		"christian-kohler.npm-intellisense",
+
+		// ES7+ React/Redux/React-Native snippets - Reactのコードスニペット
+		"dsznajder.es7-react-js-snippets",
+
+		// Better Comments - コメントの強調表示
+		"aaron-bond.better-comments",
+
+		// GitLens - Gitの拡張機能
+		"eamodio.gitlens",
+
+		// Import Cost - インポートサイズの表示
+		"wix.vscode-import-cost",
+
+		// Jest - Jestテストランナー
+		"orta.vscode-jest",
+
+		// Turbo Console Log - コンソールログの挿入
+		"chakrounanas.turbo-console-log",
+
+		// vscode-styled-components - styled-componentsのシンタックスハイライト
+		"styled-components.vscode-styled-components",
+
+		// Code Spell Checker - スペルチェック
+		"streetsidesoftware.code-spell-checker",
+
+		// Todo Tree - TODOコメントの管理
+		"gruntfuggly.todo-tree",
+
+		// Markdown All in One - Markdown編集支援
+		"yzhang.markdown-all-in-one",
+		"github.vscode-github-actions"
+	]
+}

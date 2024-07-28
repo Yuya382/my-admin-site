@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムベーススタイル */
+@layer base {
+	/* ボックスサイジングのリセット */
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	/* マージンとパディングのリセット */
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	figure,
+	blockquote,
+	dl,
+	dd {
+		margin: 0;
+	}
+
+	/* リストのスタイルリセット */
+	ul[role="list"],
+	ol[role="list"] {
+		list-style: none;
+	}
+
+	/* フォームエレメントのリセット */
+	button,
+	input,
+	select,
+	textarea {
+		font: inherit;
+	}
+
+	/* テキスト折り返しの調整 */
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		overflow-wrap: break-word;
+	}
+
+	/* ルート要素のスクロール動作 */
+	html:focus-within {
+		scroll-behavior: smooth;
+	}
+
+	/* アクセシビリティのための非表示 */
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border-width: 0;
+	}
+
+	html {
+		@apply bg-app-background text-font-black-10;
+	}
+}
+
+/* カスタムコンポーネント */
+@layer components {
+}
+
+/* カスタムユーティリティ */
+@layer utilities {
+	.text-shadow {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	}
+}
+
+/* メディアクエリの例 */
+@media (max-width: 768px) {
+	.responsive-text {
+		@apply text-sm;
+	}
+}
