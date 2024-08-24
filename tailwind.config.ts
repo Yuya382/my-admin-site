@@ -14,6 +14,7 @@ const config: Config = {
 		extend: {
 			colors: {
 				app: {
+					main: "#79D3F3",
 					primary: "#4CAF50", // 鮮やかな緑
 					secondary: "#8BC34A", // ライムグリーン
 					background: "#FBFDFB", // 非常に薄い緑

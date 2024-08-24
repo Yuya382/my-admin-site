@@ -19,10 +19,10 @@ const NavigationItem: React.FC<NavigationItemProps> = ({ href, label, icon: Icon
 			<Link
 				href={href}
 				className={`flex items-center w-full p-2 rounded-lg transition-colors duration-200
-				${isActive ? "bg-app-black text-app-white" : "hover:bg-app-background hover:text-font-topic-50"}`}
+				${isActive ? "bg-app-white text-app-black" : "hover:bg-app-background hover:text-font-topic-50"}`}
 			>
 				<div className="flex flex-col justify-center items-center">
-					<Icon size={16} className={`${isActive ? "text-app-white" : ""}`} />
+					<Icon size={16} className={`${isActive ? "text-app-black" : ""}`} />
 
 					<span className="text-xs">{label}</span>
 				</div>
@@ -31,14 +31,12 @@ const NavigationItem: React.FC<NavigationItemProps> = ({ href, label, icon: Icon
 	);
 };
 
-const Navigation = () => {
+const GlobalNavigation = () => {
 	return (
-		<nav className="fixed h-full w-24 bg-app-surface shadow-lg text-font-black-70 p-4">
-			<div className="mb-6">
-				<h2 className="text-lg font-bold text-font-topic-50">BLS ADMIN SITE</h2>
-			</div>
-			<ul className="flex flex-col space-y-2 items-center">
+		<nav className="fixed flex flex-col h-full w-fit justify-center ml-2">
+			<ul className="flex flex-col h-fit items-center bg-black rounded-2xl gap-2 py-2">
 				<NavigationItem href="/" label="Home" icon={Home} />
+				<NavigationItem href="/contents" label="delivery" icon={Home} />
 				<NavigationItem href="/contents/book" label="Book" icon={Book} />
 				<NavigationItem href="/contents/video" label="Video" icon={Video} />
 				<NavigationItem href="/contents/keyQuestion" label="KeyQuestion" icon={FlaskRound} />
@@ -49,4 +47,4 @@ const Navigation = () => {
 	);
 };
 
-export default Navigation;
+export default GlobalNavigation;
