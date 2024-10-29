@@ -36,12 +36,12 @@ const GlobalNavigation = () => {
 		<nav className="fixed flex flex-col h-full w-fit justify-center ml-2">
 			<ul className="flex flex-col h-fit items-center bg-black rounded-2xl gap-2 py-2">
 				<NavigationItem href="/" label="Home" icon={Home} />
-				<NavigationItem href="/contents" label="delivery" icon={Home} />
-				<NavigationItem href="/contents/book" label="Book" icon={Book} />
-				<NavigationItem href="/contents/video" label="Video" icon={Video} />
-				<NavigationItem href="/contents/keyQuestion" label="KeyQuestion" icon={FlaskRound} />
-				<NavigationItem href="/setting/notification" label="Notification" icon={Bell} />
-				<NavigationItem href="/contents/debug/demo" label="Demo" icon={Beaker} />
+				<NavigationItem href="/contents/del" label="配信設定" icon={Home} />
+				<NavigationItem href="/contents/book" label="電子書籍" icon={Book} />
+				<NavigationItem href="/contents/video" label="動画" icon={Video} />
+				<NavigationItem href="/contents/keyQuestion" label="キー問題" icon={FlaskRound} />
+				<NavigationItem href="/setting/notification" label="おしらせ" icon={Bell} />
+				<NavigationItem href="/debug/demo" label="Demo" icon={Beaker} />
 			</ul>
 		</nav>
 	);

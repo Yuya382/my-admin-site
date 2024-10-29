@@ -4,11 +4,11 @@ import { iServiceConfigurations } from "@/types/iServiceConfiguration";
 export const ServiceConfigurations: iServiceConfigurations[] = [
 	{
 		//全体のサービス名称
-		globalCourseName: "進研ゼミRoute",
+		globalCourseName: "ServiceName",
 		// コースコード
 		courseCode: "",
 		// 商品
-		plans: ["route-full-pack", "route-math-pack", "route-english-pack"],
+		plans: ["route-full-pack"],
 		// ロゴファイル(public配下）
 		logoFileName: "titleLogo/route.svg",
 		// シリーズの名前

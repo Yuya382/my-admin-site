@@ -10,11 +10,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-import Image from "next/image";
 import { ServiceConfigurations } from "@/config/ServiceConfiguration";
 
 const Header = () => {
-	const [currentService, setCurrentService] = useState(ServiceConfigurations[0]);
+	const [setCurrentService] = useState(ServiceConfigurations[0]);
 
 	return (
 		<header className="bg-app-main shadow-md max-h-20">
@@ -24,7 +23,6 @@ const Header = () => {
 					<div className="flex-shrink-0">
 						<DropdownMenu>
 							<DropdownMenuTrigger className="flex items-center focus:outline-none">
-								<Image src={`/${currentService.logoFileName}`} alt="Logo" width={400} height={60} />
 								<ChevronDown />
 							</DropdownMenuTrigger>
 							<DropdownMenuContent>
