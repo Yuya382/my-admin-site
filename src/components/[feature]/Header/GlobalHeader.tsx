@@ -9,12 +9,9 @@ import {
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
 import { ServiceConfigurations } from "@/config/ServiceConfiguration";
 
 const Header = () => {
-	const [setCurrentService] = useState(ServiceConfigurations[0]);
-
 	return (
 		<header className="bg-app-main shadow-md max-h-20">
 			<div className=" px-4 sm:px-6 lg:px-8">
@@ -29,10 +26,7 @@ const Header = () => {
 								<DropdownMenuLabel>サービス選択</DropdownMenuLabel>
 								<DropdownMenuSeparator />
 								{ServiceConfigurations.map((service) => (
-									<DropdownMenuItem
-										key={service.globalCourseName}
-										onSelect={() => setCurrentService(service)}
-									>
+									<DropdownMenuItem key={service.globalCourseName}>
 										{service.globalCourseName}
 									</DropdownMenuItem>
 								))}
