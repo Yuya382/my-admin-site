@@ -42,7 +42,7 @@ const Header = () => {
 									<AvatarImage src="https://github.com/shadcn.png" alt="User" />
 									<AvatarFallback>CN</AvatarFallback>
 								</Avatar>
-								<span className="text-sm font-medium text-gray-700">宮地雄也</span>
+								<span className="text-sm font-medium text-gray-700">Name</span>
 							</DropdownMenuTrigger>
 							<DropdownMenuContent>
 								<DropdownMenuLabel>My Account</DropdownMenuLabel>
